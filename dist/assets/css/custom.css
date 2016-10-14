@@ -1,0 +1,72 @@
+
+html {
+    background: #f2f2f2 url('../images/backround-img.png') repeat-x 0 bottom;
+    min-height: 100%
+}
+
+.input-field.suffix i {
+    position: absolute;
+    width: 3rem;
+    font-size: 2rem;
+    transition: color .2s;
+    top: 0px;
+    right: 0px;
+}
+
+.input-field.suffix i.active {
+    color: #26a69a;
+}
+
+.input-field.suffix input,
+.input-field.suffix textarea {
+    margin-right: 3rem;
+    width: 92%;
+    width: calc(100% - 3rem);
+}
+
+.input-field.suffix textarea {
+    padding-top: .8rem;
+}
+
+.input-field.suffix label {
+    margin-right: 3rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .input-field.suffix input {
+        width: 86%;
+        width: calc(100% - 3rem);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .input-field.suffix input {
+        width: 80%;
+        width: calc(100% - 3rem);
+    }
+}
+
+body {
+    html, body
+}
+
+.card-shadow-no {
+    box-shadow: none;
+}
+
+.main-button {
+    color: white !important;
+    background-color: #29d1d7;
+    border: 0px;
+    border-bottom: 6px solid #25c1c6;
+    border-radius: 3px;
+    padding: 10px 50px 10px 50px;
+    font-size: 1.4em;
+}
+
+.android-link {
+    text-decoration: none;
+    color: #28bec2 !important;
+}
+
+
