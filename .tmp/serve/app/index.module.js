@@ -200,20 +200,40 @@
 	    value: true
 	});
 
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-	var MainController = function MainController($http, apiBaseUrl) {
-	    'ngInject';
+	var MainController = (function () {
+	    function MainController($http, apiBaseUrl) {
+	        'ngInject';
 
-	    _classCallCheck(this, MainController);
+	        _classCallCheck(this, MainController);
 
-	    this.$http = $http;
-	    this.apiBaseUrl = apiBaseUrl;
-	    $http.defaults.useXDomain = true;
-	    this.showTabs = true;
-	    this.carousel = true;
-	    this.sliderShow = true;
-	};
+	        this.$http = $http;
+	        this.apiBaseUrl = apiBaseUrl;
+	        $http.defaults.useXDomain = true;
+	        this.showTabs = true;
+	        this.carousel = true;
+	        this.sliderShow = true;
+	    }
+
+	    _createClass(MainController, [{
+	        key: 'validateForm',
+	        value: function validateForm() {
+	            console.log('sdsdsds');
+	            // function to submit the form after all validation has occurred			
+	            this.submitForm = function (isValid) {
+	                // check to make sure the form is completely valid
+	                if (isValid) {
+	                    alert('our form is amazing');
+	                }
+	            };
+	        }
+	    }]);
+
+	    return MainController;
+	})();
 
 	exports['default'] = MainController;
 	module.exports = exports['default'];

@@ -3,66 +3,81 @@
         <div class="card card-shadow-no">
             <div class="card-content">
                 <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="col s12">
-                                <ul tabs ng-if="main.showTabs">
-                                    <li class="tab col s3"><a href="#signUp">Sign Up</a></li>
-                                    <li class="tab col s3"><a class="active" href="#signIn">Sign In</a></li>
-                                </ul>
+                    <div class="col s12">
+                        <ul tabs ng-if="main.showTabs">
+                            <li class="tab col s3"><a href="#signUp">Sign Up</a></li>
+                            <li class="tab col s3"><a class="active" href="#signIn">Sign In</a></li>
+                        </ul>
+                    </div>
+                    <form id="userForm" name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+                        <div id="signUp" class="col s12 ">
+                            <div class="input-field">
+                                <input id="fname" type="text" class="validate" ng-model="user.fname" required>
+                                <label for="fname">Full name</label>
+
                             </div>
-                            <div id="signUp" class="col s12 ">
-                                <div class="input-field">
-                                    <input id="icon_prefix" type="text" class="validate">
-                                    <label for="icon_prefix">Full name</label>
+                            <div class="input-field">
+                                <input id="email" type="email" class="validate" ng-model="user.email" required>
+                                <label for="email">Company email</label>
 
-                                </div>
-                                <div class="input-field">
-                                    <input id="icon_prefix" type="email" class="validate">
-                                    <label for="icon_prefix">Company email</label>
-
-                                </div>
-                                <div class="input-field suffix">
-                                    <i class="material-icons dp48 right">lock_outline</i>
-                                    <input id="icon_telephone" type="password" class="validate">
-                                    <label for="icon_telephone">Password</label>
-                                </div>
-                                <div class="input-field suffix">
-                                    <i class="material-icons dp48 right">lock_outline</i>
-                                    <input id="icon_telephone" type="password" class="validate">
-                                    <label for="icon_telephone">Verify Password</label>
-                                </div>
-                                <div class="input-field">
-                                    <br/>
-                                    <br/>
-                                </div>
-                                <div class="input-field center-align">
-                                    <a href="/#/company-info" class="waves-effect waves-light btn center-align"> <i
-                                            class="material-icons right">keyboard_arrow_right</i>Sign Up</a>
-
-                                </div>
                             </div>
-                            <div id="signIn" class="col s12 active">
-                                <div class="input-field">
-                                    <input id="icon_prefix" type="email" class="validate">
-                                    <label for="icon_prefix">Company email</label>
+                            <div class="input-field suffix">
+                                <i class="material-icons dp48 right">lock_outline</i>
+                                <input id="password" type="password" class="validate" ng-model="user.password" required>
+                                <label for="password">Password</label>
+                            </div>
+                            <div class="input-field suffix">
+                                <i class="material-icons dp48 right">lock_outline</i>
+                                <input id="cpassword" type="password" class="validate" ng-model="user.cpassword"
+                                       required>
+                                <label for="cpassword">Verify Password</label>
+                            </div>
+                            <div class="input-field">
+                                <br/>
+                                <br/>
+                            </div>
+                            <div class="input-field center-align">
 
-                                </div>
-                                <div class="input-field suffix">
-                                    <i class="material-icons dp48 right">lock_outline</i>
-                                    <input id="icon_telephone" type="password" class="validate">
-                                    <label for="icon_telephone">Password</label>
-                                </div>
-                                <div class="input-field">
-                                    <p class="center-align"><a href="#">Forgot your password</a></p>
-                                    <br/>
-                                    <br/>
-                                </div>
-                                <div class="input-field center-align">
-                                    <a href="/#/dashboard" class="waves-effect waves-light btn center-align"> <i
-                                            class="material-icons right">keyboard_arrow_right</i>Sign In</a>
+                                <!-- <button ng-click="main.validateForm()"
+                                         class="btn waves-effect waves-light  submit" type="submit"
+                                         name="action"> Sign Up
+                                     <i class="material-icons right">keyboard_arrow_right</i>
+                                 </button>-->
 
-                                </div>
+                                <a href="/#/company-info" class="waves-effect waves-light btn center-align">
+                                    <i class="material-icons right">keyboard_arrow_right</i>Sign Up</a>
+
+                            </div>
+                        </div>
+                    </form>
+                    <form id="signForm" name="signForm" ng-submit="submitForm(signForm.$valid)" novalidate>
+                        <div id="signIn" class="col s12 active">
+                            <div class="input-field">
+                                <input id="signEmail" type="email" class="validate" ng-model="sign.signEmail" required>
+                                <label for="signEmail">Company email</label>
+
+                            </div>
+                            <div class="input-field suffix">
+                                <i class="material-icons dp48 right">lock_outline</i>
+                                <input id="signPassword" type="password" class="validate" ng-model="sign.signPassword"
+                                       required>
+                                <label for="signPassword">Password</label>
+                            </div>
+                            <div class="input-field">
+                                <p class="center-align"><a href="#">Forgot your password</a></p>
+                                <br/>
+                                <br/>
+                            </div>
+                            <div class="input-field center-align">
+                                <!--  <button ng-click="main.validateForm()"
+                                          class="btn waves-effect waves-light submit" type="submit"
+                                          name="action"> Sign In
+                                      <i class="material-icons right">keyboard_arrow_right</i>
+                                  </button>-->
+
+                                <a href="/#/dashboard" class="waves-effect waves-light btn center-align"> <i
+                                        class="material-icons right">keyboard_arrow_right</i>Sign In</a>
+
                             </div>
                         </div>
                     </form>
