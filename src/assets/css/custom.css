@@ -146,9 +146,133 @@ i.right {
     font-size: 1.4em;
 }
 
+ul.side-nav.fixed ul.collapsible-accordion {
+    background-color: #FFF;
+}
+
+.no-shadow {
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.16), 0 2px 0px 0 rgba(0, 0, 0, 0.12);
+    border-right: 0;
+}
+
+}
+.side-nav .collapsible, .side-nav.fixed .collapsible {
+    border: none;
+    box-shadow: none;
+}
+
+.side-nav .collapsible {
+    margin: 0;
+}
+
+.collapsible {
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    margin: 0.5rem 0 1rem 0;
+}
+
 .android-link {
     text-decoration: none;
     color: #28bec2 !important;
+}
+
+ul.side-nav.fixed:hover {
+    overflow-y: auto;
+}
+
+ul.side-nav.fixed {
+    overflow: hidden;
+    background: #fff url(../images/leftmenu-bottom.png) no-repeat 0 bottom;
+}
+
+.side-nav.fixed {
+    left: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    position: fixed;
+}
+
+.side-nav li.logo {
+    padding: 21px 0;
+    border-bottom: none !important;
+}
+
+.side-nav li.unitlogo {
+    padding: 121px 0 30px;
+    border-bottom: none !important;
+}
+.side-nav li.unitlogo:hover{
+    background: transparent;
+}
+.userSection {
+    margin-top: 25px;
+    padding-bottom: 42px;
+}
+
+.userSection span {
+    color: #b6b6b6;
+    clear: both;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 10px;
+    display: block;
+}
+
+.userSection p {
+    color: #29C8CD;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.border-line {
+    background-color: #e8e8e8;
+    width: 70px;
+    height: 1px;
+    margin: auto;
+    display: block;
+}
+
+.userPhoto {
+    height: 84px;
+    width: 84px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+
+.side-nav li.logo a:hover {
+    background-color: #fff;
+}
+
+.side-nav li {
+    border-bottom: 1px solid #f3f3f3;
+}
+.side-nav.fixed a {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: normal;
+}
+.side-nav.fixed li.active a {
+    color: rgba(0, 0, 0, 1);
+}
+
+header, main, footer {
+    padding-left: 300px;
+}
+
+#nav-mobile {
+    transform: translateX(0);
+}
+
+@media only screen and (max-width: 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+
+    #nav-mobile {
+        transform: translateX(-100%);
+    }
 }
 
 
