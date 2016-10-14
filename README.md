@@ -1,4 +1,4 @@
-# Hire Easy angular app
+# Trip Kiks angular app
 
 Uses `Gulp`, `$Resource`, `ES6 (Code written using Classes)`
 
