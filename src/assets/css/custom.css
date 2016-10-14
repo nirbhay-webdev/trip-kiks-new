@@ -202,9 +202,11 @@ ul.side-nav.fixed {
     padding: 121px 0 30px;
     border-bottom: none !important;
 }
-.side-nav li.unitlogo:hover{
+
+.side-nav li.unitlogo:hover {
     background: transparent;
 }
+
 .userSection {
     margin-top: 25px;
     padding-bottom: 42px;
@@ -249,12 +251,24 @@ ul.side-nav.fixed {
 .side-nav li {
     border-bottom: 1px solid #f3f3f3;
 }
+
 .side-nav.fixed a {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.3);
     font-weight: normal;
 }
+
+.side-nav.fixed a:hover {
+    background: transparent;
+
+}
+
 .side-nav.fixed li.active a {
     color: rgba(0, 0, 0, 1);
+}
+
+.side-nav.fixed li.active {
+    border-right: 5px solid #f2f2f2;
+    background-color: transparent;
 }
 
 header, main, footer {
