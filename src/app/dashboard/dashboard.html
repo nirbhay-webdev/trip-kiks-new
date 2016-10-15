@@ -1,12 +1,10 @@
 <header>
     <nav class="top-nav">
-        <div class="container">
-            <div class="nav-wrapper"><a class="page-title">Showcase</a></div>
-        </div>
+        <div class="nav-wrapper"><a href="#" data-activates="nav-mobile"
+                                    class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
+            <a class="page-title">Find your travel budget</a></div>
     </nav>
-    <div class="container"><a href="#" data-activates="nav-mobile"
-                              class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
-    </div>
+
     <ul id="nav-mobile" class="side-nav fixed no-shadow">
         <li class="logo center-align">
             <a id="logo-container" href="/" class="brand-logo center-align">
@@ -46,22 +44,23 @@
     </ul>
 </header>
 <main>
-    <div class="container section">
+    <div class="section">
         <div class="row">
-            <div class="center col s12 buysellads">
-                <br><br>
-                <br><br>
-
-
+            <div class="searchMainBox">
+                <div class="col s6 m6">
+                    <div class="input-field largeInput col s12">
+                        <input id="trip" name="trip" type="text" class="validate inputFieldlarge">
+                        <label for="trip">Name your trip</label>
+                    </div>
+                </div>
+                <div class="col s6 m6">
+                    <div class=" largeInput col s12">
+                        <a class="waves-effect waves-light btn right">Done</a>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <br>
-
-
     </div>
-
-
 </main>
 
 
