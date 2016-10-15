@@ -340,7 +340,14 @@ header {
     border: 0;
     border-left: 4px solid #c1c1c1;
 }
+ .largeInput input:not([type]):focus:not([readonly]), .largeInput input[type=text]:focus:not([readonly]), .largeInput input[type=password]:focus:not([readonly]), .largeInput input[type=email]:focus:not([readonly]), .largeInput input[type=url]:focus:not([readonly]), .largeInput input[type=time]:focus:not([readonly]), .largeInput input[type=date]:focus:not([readonly]), .largeInput input[type=datetime]:focus:not([readonly]), .largeInput input[type=datetime-local]:focus:not([readonly]), .largeInput input[type=tel]:focus:not([readonly]), .largeInput input[type=number]:focus:not([readonly]), .largeInput input[type=search]:focus:not([readonly]){
+    border-bottom: none;
+     box-shadow: none;
+}
 
+.largeInput input:not([type]).valid, .largeInput input:not([type]):focus.valid, .largeInput input[type=text].valid, .largeInput input[type=text]:focus.valid, .largeInput input[type=password].valid, .largeInput input[type=password]:focus.valid, .largeInput input[type=email].valid, .largeInput input[type=email]:focus.valid, .largeInput input[type=url].valid, .largeInput input[type=url]:focus.valid, .largeInput input[type=time].valid, .largeInput input[type=time]:focus.valid, .largeInput input[type=date].valid, .largeInput input[type=date]:focus.valid, .largeInput input[type=datetime].valid, .largeInput input[type=datetime]:focus.valid, .largeInput input[type=datetime-local].valid, .largeInput input[type=datetime-local]:focus.valid, .largeInput input[type=tel].valid, .largeInput input[type=tel]:focus.valid, .largeInput input[type=number].valid, .largeInput input[type=number]:focus.valid, .largeInput input[type=search].valid, .largeInput input[type=search]:focus.valid{border-bottom: none;
+     box-shadow: none;
+}
 #nav-mobile {
     transform: translateX(0);
 }
