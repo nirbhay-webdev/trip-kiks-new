@@ -175,6 +175,97 @@
                 </form>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col s6 m6">
+                <div class="card card-shadow-no">
+                    <div class="card-content">
+                        <div class="row">
+                            <form id="userForm" name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate=""
+                                  class="ng-pristine ng-invalid ng-invalid-required ng-valid-email">
+                                <div id="signUp" class="col s12 " style="display: block;">
+                                    <div class="input-field">
+                                        <input id="locName" type="text"
+                                               class="validate ng-pristine ng-invalid ng-invalid-required ng-touched"
+                                               ng-model="user.fname" required="" style="">
+                                        <label for="locName" class="">SFO San Francisco, CA – San Francisco
+                                            International </label>
+
+                                    </div>
+                                    <div class="input-field">
+                                        <input id="cityOrAirport" type="email"
+                                               class="validate ng-pristine ng-valid-email ng-invalid ng-invalid-required ng-touched"
+                                               ng-model="user.email" required="" style="">
+                                        <label for="cityOrAirport">To: City or Airport</label>
+
+                                    </div>
+                                    <div class="input-field suffix col s12 m6">
+                                        <i class="material-icons dp48 right">perm_contact_calendar</i>
+                                        <input id="departure" type="password"
+                                               class="validate ng-pristine ng-invalid ng-invalid-required ng-touched"
+                                               ng-model="user.password" required="" style="">
+                                        <label for="departure">Departure</label>
+                                    </div>
+                                    <div class="input-field suffix col s12 m6">
+                                        <i class="material-icons dp48 right">perm_contact_calendar</i>
+                                        <input id="return" type="password"
+                                               class="validate ng-pristine ng-invalid ng-invalid-required ng-touched"
+                                               ng-model="user.cpassword" required="">
+                                        <label for="return">Return</label>
+                                    </div>
+
+
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col s6 m6">
+                <div class="card card-shadow-no">
+                    <div class="card-content">
+                        <div class="row">
+                            <form id="userForm" name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate=""
+                                  class="ng-pristine ng-invalid ng-invalid-required ng-valid-email">
+                                <div id="signUp" class="col s12 " style="display: block;">
+                                    <div class="input-field">
+                                        <input id="locCity" type="text"
+                                               class="validate ng-pristine ng-invalid ng-invalid-required ng-touched"
+                                               ng-model="user.fname" required="" style="">
+                                        <label for="locCity" class="">City or Address</label>
+
+                                    </div>
+                                    <div class="input-field suffix col s12 m6">
+                                        <i class="material-icons dp48 right">perm_contact_calendar</i>
+                                        <input id="checkIn" type="password"
+                                               class="validate ng-pristine ng-invalid ng-invalid-required ng-touched"
+                                               ng-model="user.password" required="" style="">
+                                        <label for="checkIn">Check in</label>
+                                    </div>
+                                    <div class="input-field suffix col s12 m6">
+                                        <i class="material-icons dp48 right">perm_contact_calendar</i>
+                                        <input id="checkOut" type="password"
+                                               class="validate ng-pristine ng-invalid ng-invalid-required ng-touched"
+                                               ng-model="user.cpassword" required="">
+                                        <label for="return">Check out</label>
+                                    </div>
+
+
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
     </div>
 </main>
 
