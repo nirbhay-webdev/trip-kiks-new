@@ -6,4 +6,13 @@ jQuery(document).ready(function ($) {
             jQuery(this).addClass('active');
         }
     });
+    $("#trip").focusout(function () {
+        if (!$(this).val()) {
+            $('.largeInput a').css("display", 'none')
+
+        } else {
+            $('.largeInput a').css("display", 'block')
+        }
+    });
+
 });

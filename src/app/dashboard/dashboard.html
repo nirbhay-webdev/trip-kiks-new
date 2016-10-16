@@ -43,21 +43,112 @@
         </li>
     </ul>
 </header>
-<main>
-    <div class="section">
+<main ng-controller="dashboard">
+    <div class="section" id="step1">
+        <ul class="triplist">
+            <li></li>
+            <li> </li>
+        </ul>
         <div class="row">
+
             <div class="searchMainBox">
-                <div class="col s6 m6">
-                    <div class="input-field largeInput col s12">
-                        <input id="trip" name="trip" type="text" class="validate inputFieldlarge">
-                        <label for="trip">Name your trip</label>
+                <form name="myForm" >
+                    <div class="col s6 m6">
+                        <div class="input-field largeInput col s12">
+                                <input id="tripKiks" name="tripKiks" ng-model="dashboard.tripName" type="text"
+                                       class="validate inputFieldlarge">
+                                <label for="tripKiks">Name your trip</label>
+
+                        </div>
                     </div>
-                </div>
-                <div class="col s6 m6">
-                    <div class=" largeInput col s12">
-                        <a class="waves-effect waves-light btn right">Done</a>
+                    <div class="col s6 m6">
+                        <div class=" largeInput col s12" ng-show="dashboard.tripName">
+                            <a class="waves-effect waves-light btn right">Done</a>
+                        </div>
                     </div>
-                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="step2">
+        <ul class="triplist">
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="row">
+
+            <div class="searchMainBox">
+                <form name="myForm" >
+                    <div class="col s8 m8">
+
+                        <div class="input-field largeInput col s12">
+                            <form ng-app="" name="myForm">
+                                <input id="step2tripKiks" value="Business trip to New Yo" ng-init="Business trip to New Yo" name="step2tripKiks" ng-model="dashboard.step2tripKiks" type="text"
+                                       class="validate inputFieldlarge">
+                                <label for="step2tripKiks" class="active">Name your trip</label>
+
+                        </div>
+                    </div>
+                    <div class="col s6 m4">
+                        <div class=" largeInput col s12" ng-show="dashboard.step2tripKiks">
+                            <a class="waves-effect waves-light btn right">Done</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="step3">
+        <ul class="triplist">
+            <li>Business trip to New York</li>
+            <li></li>
+        </ul>
+        <div class="row">
+
+            <div class="searchMainBox">
+                <form name="myForm">
+                    <div class="col s6 m6">
+
+                        <div class="input-field largeInput col s12">
+                                <input id="step3tripKiks" style="border:none" value="Select booking option" name="step3tripKiks" ng-model="dashboard.step3tripKiks" type="text"
+                                       class="validate inputFieldlarge">
+
+                        </div>
+                    </div>
+                    <div class="col s6 m6">
+                        <div class=" largeInput col s12" ng-show="dashboard.step3tripKiks">
+                            <a class="waves-effect waves-light btn right">Done</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="step4">
+        <ul class="triplist">
+            <li>Business trip to New York</li>
+            <li> Flight & Hotel</li>
+        </ul>
+        <div class="row">
+
+            <div class="searchMainBox">
+                <form name="myForm" ng-submit="tripAdd()">
+                    <div class="col s6 m6">
+
+                        <div class="input-field largeInput col s12">
+                            <form ng-app="" name="myForm">
+                                <input id="step4tripKiks" name="step4tripKiks" ng-model="dashboard.step4tripKiks" type="text"
+                                       class="validate inputFieldlarge">
+                                <label for="step4tripKiks">Name your trip</label>
+
+                        </div>
+                    </div>
+                    <div class="col s6 m6">
+                        <div class=" largeInput col s12" ng-show="dashboard.step4tripKiks">
+                            <a class="waves-effect waves-light btn right">Done</a>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
