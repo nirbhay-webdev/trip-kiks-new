@@ -463,6 +463,9 @@ header {
 .largeInput a{
     margin-top: 40px;
 }
+.listofbooking{
+    margin-left: 30px;
+}
 .largeInput input:not([type]):focus:not([readonly]), .largeInput input[type=text]:focus:not([readonly]), .largeInput input[type=password]:focus:not([readonly]), .largeInput input[type=email]:focus:not([readonly]), .largeInput input[type=url]:focus:not([readonly]), .largeInput input[type=time]:focus:not([readonly]), .largeInput input[type=date]:focus:not([readonly]), .largeInput input[type=datetime]:focus:not([readonly]), .largeInput input[type=datetime-local]:focus:not([readonly]), .largeInput input[type=tel]:focus:not([readonly]), .largeInput input[type=number]:focus:not([readonly]), .largeInput input[type=search]:focus:not([readonly]) {
     border-bottom: none;
     box-shadow: none;

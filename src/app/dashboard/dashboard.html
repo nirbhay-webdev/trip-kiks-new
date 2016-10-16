@@ -47,17 +47,16 @@
     <div class="section" id="step1">
         <ul class="triplist">
             <li></li>
-            <li> </li>
+            <li></li>
         </ul>
         <div class="row">
-
             <div class="searchMainBox">
-                <form name="myForm" >
+                <form name="myForm">
                     <div class="col s6 m6">
                         <div class="input-field largeInput col s12">
-                                <input id="tripKiks" name="tripKiks" ng-model="dashboard.tripName" type="text"
-                                       class="validate inputFieldlarge">
-                                <label for="tripKiks">Name your trip</label>
+                            <input id="tripKiks" name="tripKiks" ng-model="dashboard.tripName" type="text"
+                                   class="validate inputFieldlarge">
+                            <label for="tripKiks">Name your trip</label>
 
                         </div>
                     </div>
@@ -78,12 +77,14 @@
         <div class="row">
 
             <div class="searchMainBox">
-                <form name="myForm" >
+                <form name="myForm">
                     <div class="col s8 m8">
 
                         <div class="input-field largeInput col s12">
                             <form ng-app="" name="myForm">
-                                <input id="step2tripKiks" value="Business trip to New Yo" ng-init="Business trip to New Yo" name="step2tripKiks" ng-model="dashboard.step2tripKiks" type="text"
+                                <input id="step2tripKiks" value="Business trip to New Yo"
+                                       ng-init="Business trip to New Yo" name="step2tripKiks"
+                                       ng-model="dashboard.step2tripKiks" type="text"
                                        class="validate inputFieldlarge">
                                 <label for="step2tripKiks" class="active">Name your trip</label>
 
@@ -99,19 +100,20 @@
         </div>
     </div>
     <div class="section" id="step3">
-        <ul class="triplist">
-            <li>Business trip to New York</li>
-            <li></li>
-        </ul>
-        <div class="row">
+        <form name="myForm">
+            <ul class="triplist">
+                <li>Business trip to New York</li>
+                <li></li>
+            </ul>
+            <div class="row">
 
-            <div class="searchMainBox">
-                <form name="myForm">
+                <div class="searchMainBox">
                     <div class="col s6 m6">
 
                         <div class="input-field largeInput col s12">
-                                <input id="step3tripKiks" style="border:none" value="Select booking option" name="step3tripKiks" ng-model="dashboard.step3tripKiks" type="text"
-                                       class="validate inputFieldlarge">
+                            <input id="step3tripKiks" style="border:none" value="Select booking option"
+                                   name="step3tripKiks" ng-model="dashboard.step3tripKiks" type="text"
+                                   class="validate inputFieldlarge">
 
                         </div>
                     </div>
@@ -120,9 +122,29 @@
                             <a class="waves-effect waves-light btn right">Done</a>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="listofbooking">
+
+
+                    <p>
+                        <input class="with-gap" name="group1" type="radio" id="flight"/>
+                        <label for="flight">Flight</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="group1" type="radio" id="hotel"/>
+                        <label for="hotel">Hotel</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="group1" type="radio" checked id="flight_Hotel"/>
+                        <label for="flight_Hotel">Flight & Hotel</label>
+                    </p>
+
+                </div>
+            </div>
+        </form>
+
     </div>
     <div class="section" id="step4">
         <ul class="triplist">
@@ -137,15 +159,17 @@
 
                         <div class="input-field largeInput col s12">
                             <form ng-app="" name="myForm">
-                                <input id="step4tripKiks" name="step4tripKiks" ng-model="dashboard.step4tripKiks" type="text"
+                                <input id="step4tripKiks" value="Flight & Hotel details" name="step4tripKiks"
+                                       ng-model="dashboard.step4tripKiks"
+                                       type="text"
                                        class="validate inputFieldlarge">
-                                <label for="step4tripKiks">Name your trip</label>
+                                <label class="active" for="step4tripKiks">Name your trip</label>
 
                         </div>
                     </div>
                     <div class="col s6 m6">
                         <div class=" largeInput col s12" ng-show="dashboard.step4tripKiks">
-                            <a class="waves-effect waves-light btn right">Done</a>
+                            <a class="waves-effect waves-light btn right">Search</a>
                         </div>
                     </div>
                 </form>
